@@ -1,0 +1,28 @@
+/* 
+ * Включает в себя настройки компонентов проекта
+ */
+:root {
+    /* Настройки для блока body */
+    --page-background-color: #f6f2de;
+
+    /* Настройки для блока wrapper*/
+    --wrapper-padding-top-bottom: 20px;
+    --wrapper-padding-left: 30px;
+
+    /* Настройки для блока card */
+    --card-background-color: #ffffff;
+    --top-card-offset: 60px;
+    --card-shadow: 0 0 8px rgba(1, 1, 1, 0.2);
+    --card-narrow-width: 400px; 
+    --card-wide-width: 960px;
+
+    /* Настройки для элемента circle */
+    --card-circle-font-family: Arial, sans-serif;
+    --card-circle-diameter: 102px;
+    --card-circle-border: 4px solid black;
+    --card-circle-font-size: 48px;
+    --card-circle-font-weight: bold;
+
+    /* Инициализация счетчика, для простановки номеров карточкам */
+    counter-reset: cardNumberCounter;
+}

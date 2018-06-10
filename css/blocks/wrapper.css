@@ -1,0 +1,7 @@
+@import "./../config.css";
+
+.wrapper {
+    position: relative;
+    padding: var(--wrapper-padding-top-bottom) 0 var(--wrapper-padding-top-bottom) var(--wrapper-padding-left);
+    min-height: calc(100vh - var(--wrapper-padding-top-bottom) * 2);
+}

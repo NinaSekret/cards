@@ -1,0 +1,54 @@
+@import "./../config.css";
+
+/*
+* !Для корректной работы простановки нумерации карточек, требуется инициализация счетчика, в контейнере, который будет
+* содержать набор данных блоков(так же инициализация может быть выполнена на уровнях выше):
+* counter-reset: cardNumberCounter;
+*/
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--card-background-color); 
+    height: 100%;
+    z-index: auto;
+}
+
+.card:not(:first-child) {
+    margin-left: var(--top-card-offset);
+}
+
+.card:first-child, .card:last-child {
+    box-shadow: var(--card-shadow);
+}
+
+.card--narrow {
+    width: var(--card-narrow-width);
+}
+
+.card--wide {
+    width: var(--card-wide-width);  
+}
+
+.card--wide:not(:first-child):not(:last-child) {
+    width: var(--card-narrow-width);
+}
+
+.card__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--card-circle-diameter);
+    width: var(--card-circle-diameter);
+    border-radius: 50%;
+    border: var(--card-circle-border);
+    font-family: var(--card-circle-font-family);
+    font-weight: var(--card-circle-font-weight);
+    font-size: var(--card-circle-font-size);
+}
+
+.card__circle:after{
+    counter-increment: cardNumberCounter;
+    content: counter(cardNumberCounter);
+}
