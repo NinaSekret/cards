@@ -4,6 +4,7 @@
 :root {
     /* Настройки для блока body */
     --page-background-color: #f6f2de;
+    --hover-page-background-color: #e9e6d3; /* Цвет, при наведении на всё пространство, не занятое карточками */
 
     /* Настройки для блока wrapper*/
     --wrapper-padding-top-bottom: 20px;

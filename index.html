@@ -4,21 +4,19 @@
     <title>Cards</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 </head>
 <body>
     <div class="wrapper clearfix">      
-        <div class="card card--narrow">
-            <div class="card__circle"></div>    
-        </div>      
-        <div class="card card--wide">
-            <div class="card__circle"></div>        
-        </div>
-        <div class="card card--narrow">
-            <div class="card__circle"></div>    
-        </div>
-        <div class="card card--narrow">
-            <div class="card__circle"></div>    
-        </div>
     </div>
+
+    <script type="text/javascript" src="js/cards.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+<script id="card-template" type="text/x-handlebars-template">
+    <div class="card card--{{type}}">
+        <div class="card__circle"></div>    
+    </div>
+</script>
 </html>

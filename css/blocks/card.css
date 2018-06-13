@@ -31,7 +31,7 @@
     width: var(--card-wide-width);  
 }
 
-.card--wide:not(:first-child):not(:last-child) {
+.card--wide:not(:last-child) {
     width: var(--card-narrow-width);
 }
 
